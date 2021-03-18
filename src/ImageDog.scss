@@ -2,8 +2,11 @@
   width: 150px;
   height: 150px;
   margin: 5px;
+  border-radius: 10px;
+  border: solid rgb(0, 0, 0) 1px ;
 }
 
 .image-list {
   flex-wrap: wrap;
+  overflow-y: scroll;
 }

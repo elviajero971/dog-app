@@ -16,7 +16,7 @@ $primary-color: rgb(12, 12, 12);
     .menuItem {
       width: 60%;
       border: $primary-color solid 2px;
-      margin: 10px;
+      margin: 20px;
       padding: 20px;
       justify-content: center;
       align-items: center;
@@ -28,6 +28,8 @@ $primary-color: rgb(12, 12, 12);
     width: 70%;
     height: 100%;
     border: $primary-color solid 2px;
+    display: flex;
+    overflow-y: scroll;
   }
 
 }
