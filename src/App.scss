@@ -1,12 +1,34 @@
-$color-primary: rgb(12, 12, 12);
+$primary-color: rgb(12, 12, 12);
 
 .app {
   display: flex;
   width: 100vw;
   height: 100vh;
 
-  p {
-    color: $color-primary;
+  .menu {
+    width: 30%;
+    height: 100%;
+    border: $primary-color solid 2px;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+
+    .menuItem {
+      width: 60%;
+      border: $primary-color solid 2px;
+      margin: 10px;
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+    }
   }
+
+  .content {
+    width: 70%;
+    height: 100%;
+    border: $primary-color solid 2px;
+  }
+
 }
 
