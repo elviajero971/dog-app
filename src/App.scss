@@ -1,0 +1,13 @@
+$color-primary: rgb(12, 12, 12);
+
+.app {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+
+  p {
+    color: $color-primary;
+  }
+}
+
