@@ -1,0 +1,18 @@
+$primaryColor: rgb(177, 159, 82);
+
+.menu{
+    width: 30%;
+    height: 100%;
+    border: $primaryColor solid 2px;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    .menuItem{
+        width: 60%;
+        border: $primaryColor solid 2px;
+        margin: 10px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+}

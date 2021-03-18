@@ -1,14 +1,15 @@
 import "./App.scss";
 import React from "react";
+import Content from "./components/content/Content";
+import Menu from "./components/menu/Menu";
+
 const App = () => {
+
+  
   return (
     <div className="app">
-      <h1>
-        {"Je suis le titre"}
-      </h1>
-      <p>
-        {"Bobby"}
-      </p>
+      <Menu />
+      <Content />
     </div>
   );
 };
