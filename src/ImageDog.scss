@@ -1,12 +1,17 @@
-.img {
-  width: 150px;
-  height: 150px;
-  margin: 5px;
-  border-radius: 10px;
-  border: solid rgb(0, 0, 0) 1px ;
-}
+$border-color: rgb(0, 0, 0);
 
-.image-list {
+.imageList {
+
   flex-wrap: wrap;
   overflow-y: scroll;
+  justify-content: center;
+  align-items: center;
+  .img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    border: solid $border-color 1px;
+  }
+
 }

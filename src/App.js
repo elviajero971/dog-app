@@ -1,12 +1,9 @@
-
 import React, {useState, useEffect} from "react";
-import { BrowserRouter as Router,Switch, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import "./App.scss";
 import ImageDog from "./ImageDog";
 const App = () => {
-
   const url = "https://dog.ceo/api/breeds/list/all";
-  
   const [menuItem, setMenuItem] = useState();
   const linkArray = [];
 
@@ -20,7 +17,7 @@ const App = () => {
           linkArray.push(
             <div className="menuItem">
               <Link to={`/${key}`}>
-                  {key}
+                {key}
               </Link>
             </div>
           );
@@ -39,11 +36,11 @@ const App = () => {
           {menuItem}
         </div>
         <div className="content">
-        <Switch>
-          <Route path="/:breed">
-            <ImageDog/>
-          </Route>
-        </Switch>
+          <Switch>
+            <Route path="/:breed">
+              <ImageDog />
+            </Route>
+          </Switch>
         </div>
       </Router>
     </div>
