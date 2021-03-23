@@ -1,5 +1,6 @@
-$primary-color: rgb(12, 12, 12);
-$colorSecondary: rgb(24, 123, 89);
+@import './scss/theme';
+@import './scss/layout';
+
 .app {
   display: flex;
   width: 100vw;
@@ -8,28 +9,26 @@ $colorSecondary: rgb(24, 123, 89);
   .menu {
     width: 30%;
     height: 100%;
-    border: $primary-color solid 2px;
+    border: $simpleBorder;
     flex-direction: column;
     align-items: center;
     overflow-y: scroll;
 
     .menuItem {
       width: 60%;
-      border: $primary-color solid 2px;
+      border: $simpleBorder;
       font-size: x-large;
-      margin: 10px;
       padding: 20px;
       justify-content: center;
       align-items: center;
       border-radius: 10px;
       a {
         text-decoration: none;
-        color: $primary-color;
+        color: $primaryColor;
         text-transform: uppercase;
         &:hover {
           cursor: pointer;
-          font-size: xx-large;
-          color: $colorSecondary;
+          color: $secondaryColor;
         }
       }
     }
@@ -38,7 +37,7 @@ $colorSecondary: rgb(24, 123, 89);
   .content {
     width: 70%;
     height: 100%;
-    border: $primary-color solid 2px;
+    border: $simpleBorder;
     display: flex;
     overflow-y: scroll;
   }
